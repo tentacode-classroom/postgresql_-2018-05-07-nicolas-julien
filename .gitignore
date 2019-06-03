@@ -1,3 +1,4 @@
 /.couscous/
 /.vagrant/
 /vendor/
+/scripts/*.json
