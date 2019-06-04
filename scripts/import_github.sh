@@ -10,6 +10,7 @@ gunzip  2018-05-07-15.json.gz -y
 echo "Deplacement du json"
 cp 2018-05-07-15.json ../json/2018-05-07-15.json
 rm â2018-05-07-15.json
+rm 2018-05-07-15.json.gz
 
 
 
