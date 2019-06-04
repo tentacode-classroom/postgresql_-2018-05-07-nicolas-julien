@@ -3,3 +3,4 @@
 /vendor/
 /scripts/*.json
 *.json
+*.DS_Store
