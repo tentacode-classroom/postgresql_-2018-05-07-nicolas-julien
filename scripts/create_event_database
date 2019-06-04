@@ -1,11 +1,5 @@
 #!/bin/bash
 
-sudo service postgresql start
-
-sudo -u postgres psql
-
-DROP TABLE IF EXISTS `github_events`;
-CREATE TABLE `github_events` (
-    `event_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
-    PRIMARY KEY (`event_id`),
-)
+echo "Installation de la base de donnée"
+sudo -u postgres psql -f ./scripts/sql/github_events.sql
+echo 'tâche finis'
