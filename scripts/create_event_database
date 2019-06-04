@@ -1,5 +1,7 @@
 #!/bin/bash
 
-echo "Installation de la base de donnée"
+echo -e "\033[0;36m Installation de la base de donnée \033[0m"
+
 sudo -u postgres psql -f ./scripts/sql/github_events.sql
-echo 'tâche finis'
+
+echo -e '\033[0;36m tâche finis \033[0m'
