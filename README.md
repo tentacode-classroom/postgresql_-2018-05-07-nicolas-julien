@@ -1,10 +1,36 @@
-# postgresql
+# PostgresQL Nicolas Notararigo/ Julien Bonnanfant
 
 
-1- Installer PostgresSQl Version 11.3 --> setup.sh
 
-2- Telecharger l'archive github au formatJSON --> import.sh
+## Instalation de PostgresQL 
 
-3- Analyser la structure du JSon
+Exécutez le script suivant
 
+```Shell
+./setup_postresql.sh 
+```
+
+
+
+## Importation du Json venant de github
+
+```shell
+./import_github.sh
+```
+
+
+
+## Création des bases de données
+
+```
+./create_event_database
+```
+
+
+
+## Configuration de postgresQL
+
+```shell
+./update_configuration
+```
 
