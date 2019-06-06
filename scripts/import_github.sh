@@ -1,20 +1,15 @@
 #!/bin/bash
 
-
-echo "Telechargement du json"
+echo -e "\033[0;36m Téléchargement du json \033[0m"
 wget https://data.gharchive.org/2018-05-07-15.json.gz
 
-echo "Extraction du Json"
-gunzip  2018-05-07-15.json.gz -y
+echo -e "\033[0;36m Extraction du Json \033[0m"
+gunzip  2018-05-07-15.json.gz -f
 
-echo "Deplacement du json"
-
-mv 2018-05-07-15.json  ../resources/data_github.json
-
-#cp 2018-05-07-15.json ../json/2018-05-07-15.json
-#rm �2018-05-07-15.json
+echo -e "\033[0;36m Déplacement du json \033[0m"
+mkdir -p ./scripts/ressources/
+mv 2018-05-07-15.json  ./scripts/ressources/data_github.json
 rm 2018-05-07-15.json.gz
 
-
-
-head  ../json/2018-05-07-15.json
+head  ./scripts/ressources/data_github.json
+echo -e "\033[0;36m Json importé \033[0m"
