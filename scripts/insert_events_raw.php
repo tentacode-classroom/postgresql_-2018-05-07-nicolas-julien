@@ -3,7 +3,7 @@
 $connection = new \PDO(
     'pgsql:host=localhost;port=5432;dbname=github_events',
     'super_admin',
-    'qwertyuiop'
+    '12345'
 );
 
 $connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);

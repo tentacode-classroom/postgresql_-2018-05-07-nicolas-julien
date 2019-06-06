@@ -8,7 +8,7 @@ gunzip  2018-05-07-15.json.gz -f
 
 echo -e "\033[0;36m Déplacement du json \033[0m"
 mkdir -p ./scripts/ressources/
-mv 2018-05-07-15.json  ./scripts/ressources/data_github.json
+mv 2018-05-07-15.json  ./scripts/ressources/github_data.json
 rm 2018-05-07-15.json.gz
 
 head  ./scripts/ressources/data_github.json
