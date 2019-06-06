@@ -7,7 +7,7 @@
 Exécutez le script suivant
 
 ```Shell
-./setup_postresql.sh 
+./scritps/setup_postresql.sh 
 ```
 
 Ce script va allez chercher le repo, installez postgresQL puis le lancer.
@@ -19,7 +19,7 @@ Ce script va allez chercher le repo, installez postgresQL puis le lancer.
 Ensuite pour récurperer les evenements de GitHub du 7 Mai 2018 à 15h, on va le télécharger et l'extraire, puis le deplacer dans /json
 
 ```shell
-./import_github.sh
+./scritps/import_github.sh
 ```
 
 
@@ -29,7 +29,7 @@ Ensuite pour récurperer les evenements de GitHub du 7 Mai 2018 à 15h, on va le
 Créations table, actor, repo, events, push_events
 
 ```
-./create_event_database
+./scritps/create_event_database
 ```
 
 
@@ -39,7 +39,7 @@ Créations table, actor, repo, events, push_events
 Changemement sur le port 1234 et ajout de la memoire de travail sur 100Mb
 
 ```shell
-./update_configuration
+./scritps/update_configuration
 ```
 
 
@@ -49,7 +49,7 @@ Changemement sur le port 1234 et ajout de la memoire de travail sur 100Mb
 Création de super-admin et de l'uttilisateurs github
 
 ```shell
-./create_users
+./scritps/create_users
 ```
 
 
