@@ -54,3 +54,9 @@ Création de super-admin et de l'uttilisateurs github
 
 
 
+## Configuration PgAdmin4
+
+```shell
+./scripts/pg_admin_install.sh
+```
+
