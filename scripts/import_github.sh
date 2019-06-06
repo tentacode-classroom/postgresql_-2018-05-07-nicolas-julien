@@ -8,10 +8,13 @@ echo "Extraction du Json"
 gunzip  2018-05-07-15.json.gz -y
 
 echo "Deplacement du json"
-cp 2018-05-07-15.json ../json/2018-05-07-15.json
-rm â2018-05-07-15.json
+
+mv 2018-05-07-15.json  ../resources/data_github.json
+
+#cp 2018-05-07-15.json ../json/2018-05-07-15.json
+#rm â2018-05-07-15.json
 rm 2018-05-07-15.json.gz
 
 
 
-nano  ../json/2018-05-07-15.json
+head  ../json/2018-05-07-15.json

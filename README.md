@@ -42,3 +42,15 @@ Changemement sur le port 1234 et ajout de la memoire de travail sur 100Mb
 ./update_configuration
 ```
 
+
+
+## Création des différents utilisateurs 
+
+Création de super-admin et de l'uttilisateurs github
+
+```shell
+./create_users
+```
+
+
+
