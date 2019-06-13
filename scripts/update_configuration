@@ -4,8 +4,9 @@
 #sudo -u postgres psql -c "ALTER SYSTEM SET port = 1234;"
 
 
-sudo -u postgres psql -f sql/update_configuration.sql
+sudo -u postgres psql -f ./scripts/sql/update_configuration.sql
 
 sudo service postgresql restart
 
 sudo -u postgres psql -c "SELECT name, setting FROM pg_settings WHERE name =  'port' and name = 'work_mem';"
+u
