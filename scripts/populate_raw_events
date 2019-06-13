@@ -1,10 +1,10 @@
 #!/bin/bash
 
-echo -e "\033[0;36m Création de la table `events_raw` \033[0m"
+echo -e "\033[0;36m Creating table `events_raw` \033[0m"
 
 sudo -u postgres psql -c 'CREATE TABLE events_raw(id SERIAL PRIMARY KEY, data_json JSONB NOT NULL)'
 
-echo -e '\033[0;36m Table créée... \033[0m'
-echo -e '\033[0;36m Importation des données ... \033[0m'
-php ./insert_events_raw
-echo -e '\033[0;36m Données importer \033[0m'
+echo -e '\033[0;36m Table created... \033[0m'
+echo -e '\033[0;36m Importing data ... \033[0m'
+php './script/insert_events_raw.php'
+echo -e '\033[0;36m Data imported \033[0m'

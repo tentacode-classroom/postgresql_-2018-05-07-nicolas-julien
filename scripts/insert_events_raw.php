@@ -2,7 +2,7 @@
 
 $connection = new \PDO(
     'pgsql:host=localhost;port=5432;dbname=github_events',
-    'super_admin',
+    'github_events',
     '12345'
 );
 
