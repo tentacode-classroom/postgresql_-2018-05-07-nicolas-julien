@@ -2,14 +2,14 @@
 
 #On ce connecte à la base de donnée et on execute le fichier SQL dans /sql
 
-sudo -u postgres psql -f ../sql/create_users.sql
+sudo -u postgres psql -f ./scripts/sql/create_users.sql
 
 
 
 
 # création du fichier .pgpass + ajout identifiants
 touch ~/.pgpass
-chmod 0600 ~/.pgpass 
+chmod 0600 ~/.pgpass
 echo "*:*:*:super_admin:12345" > ~/.pgpass
 echo "*:*:github_events:github_events:12345" >> ~/.pgpass
 
